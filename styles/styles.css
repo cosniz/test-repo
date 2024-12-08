@@ -92,7 +92,7 @@ figcaption {
 }
 
 img {
-    /* --size: 600px; */
+
     max-width: 100%;
     max-height: auto;
     vertical-align: middle;
@@ -163,8 +163,8 @@ a:active {
     border: solid 3px #ffffff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: #fff; /* change this to transparent*/
-    color: black;   /* change this to white */
+    background-color: #fff;
+    color: black;   
     margin-left: 0;
     }
 
@@ -248,9 +248,9 @@ header.logo {
     font-size: 1rem;
     text-decoration: none;
     text-align: center;
-    font-weight: 400;
-    /* color: #2f250e; */
+    font-weight: 400;  
 }
+
 .side-nav ul li a:hover {
     color:rgb(212, 255, 0);
     text-shadow: 1px 1px 2px #02472e;
@@ -327,7 +327,6 @@ header.logo {
 
 .about-section {
     height: 100%;
-     /* float: left; */
     max-width: auto;
     background-image: linear-gradient(transparent, 75%, var(--primary-color));
     border-bottom-left-radius: 15px;
@@ -358,7 +357,7 @@ header.logo {
 
 /* -------- Aside ------------------------------ */
 aside.side-nav {
-    /* max-width: 1290px; */
+
     margin: 0 5px;
         }
 
