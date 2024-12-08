@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-Sign Up-</title>
+    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="./styles/layout.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdns.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="my_jquery_functions.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"> <!-- item  1 ================== -->
+            <nav id="navbar"> <!-- Main Navigation ------ -->
+                <ul>
+                    <li><a href="index.html">Welcome</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a class="active" href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header grass-linear item2"> <!-- item 2 and Header -->
+            <div class="logo"><img src="images/logo.png" alt="company logo" 
+                title="This is the company logo for Rip it and Grip it Disc Golf Academy." width="150px" height="150px"></div>
+            <h1>Grip it & Rip it</h1>
+        </header>
+        
+        <div class="item3">
+            <section class="content">
+                <main class="center">
+                    <section class="form-container">
+                        <h2 class="h2-color">Register for Grip it & Rip it Disc Golf Academy</h2>
+                        <form class="inquiries" action="https://webdevbasics.net/scripts/demo.php" method="post">
+                            <fieldset class="area">
+                                <legend>Contact Information</legend>
+                                    <p> <label for="name" class="contact"> Name:</label>
+                                        <input type="text" class="required" size="30" name="name" id="name" placeholder="First and Last..." required="required"></p>
+                        
+                                    <p><label for="email" class="contact">Email:</label>
+                                        <input type="text" class="required email" size="30" name="email" id="email" placeholder="Your Email..." required="required"></p>
+                        
+                                    <p><label for="phone" class="contact">Phone:</label>
+                                        <input type="text" size="11" name="phone" id="phone" placeholder="Phone #..." required="required"></p>
+
+                                    <p><label for="Street" class="contact">Street:</label>
+                                        <input type="text" size="30"  maxlength="35" name="street" id="Street" 
+                                        placeholder="Street Name..." required="required"></p>
+
+                                    <p><label for="City" class="contact">City/Town:</label>
+                                        <input type="text" size="20"  maxlength="35" name="city" id="City" placeholder="Your City..." required="required"></p>
+
+                                    <p>
+                                        <label for="state" class="contact" >State:</label>
+                                        <input type="text" size="11" maxlenght="35" name="state" id="state" placeholder="Your State..."   required="required">
+                                    </p>
+                            
+                                    <p>
+                                        <label for="zip" class="contact" >Zip:</label>
+                                        <input type="text" size="10" maxlenght="35" name="zip" id="zip" 
+                                    placeholder="Zip..." required="required">
+                                    </p>
+                            </fieldset>
+                            <fieldset class="area">
+                            <legend>Select the area(s) of your game that need improvement:</legend>
+                                <p>
+                                    <input type="checkbox" name="skills" value="approach" id="Approach">
+                                    <label for="Approach" class="area">Approach Shots</label>
+
+                                    <input type="checkbox" name="skills" value="putting" id="Putting">
+                                    <labe for="Putting" class="area">Putting</labe>
+                                </p>
+                        
+                                <p>
+                                    <input  type="checkbox" name="skills" value="forehand" id="Forehand">
+                                    <label for="Forehand" class="area">Forehand</label>
+                                    
+                                    <input type="checkbox" name="skills" value="backhand" id="Backhand">
+                                    <label for="Backhand" class="area">Backhand</label>
+                                    
+                                </p>
+
+                                <p>
+
+                                    <input type="checkbox" name="skills" value="form" id="Form">
+                                    <label for="Form" class="area">Form</label>
+
+                                    <input type="checkbox" name="skills" value="readiness" id="Readiness">
+                                    <label for="Readiness" class="area">Tournament Preparation</label>
+                                </p>
+                            </fieldset>
+                            <p>
+                                Select the number of hour long lessons you desire:
+                                <select name="plans">
+                                    <option>One Hour</option>
+                                    <option>Two Hours</option>
+                                    <option>Three Hours</option>
+                                    <option>Four Hours</option>
+                                    <option>Five Hours</option>
+                                    <option>Six Hours</option>
+                                    <option>Seven Hours</option>
+                                </select>
+                                <p>
+                                    Are you new to the sport of Disc Golf?<br>
+                                    <label for="yes">Yes</label> 
+                                    <input type="radio" value="yes" name="relocate" id="yes">
+                                    <label for="no">No</label> 
+                                    <input type="radio" value="no" name="relocate" id="no">
+                                </p>
+
+                                <p>Write a paragraph which describes your rationale for pursuing coaching</p>
+                                <p>
+                                    <textarea name="rationale" rows="6" cols="35" placeholder="My reasons are..." >
+                                        
+                                    </textarea>
+                                </p>
+
+                                <p>Please use the browse button to select a video file of you throwing a disc.</p>
+                                <p>
+                                    <input type="file" size="30">
+                                </p>
+
+                                <p>
+                                    <input type="submit" value="Submit">
+                                    <input type="reset" value="Clear">
+                                </p>
+                            </p>
+                        </form>
+                    </section>                                                    <!-- End of form container -->
+                </main>
+            </section>
+        </div>
+        <!-- Side Bar Navigation -->
+        <aside id="links" class="item4 side-nav">
+            <h3>Useful Links </br><a href="#links" class="more">click to show & hide</a></h3>
+
+            <div class="simple-linear side-nav show-details">
+                <h3>Disc Retailers</h3>
+                <ul>
+                    <li><a href="https://infinitediscs.com" target="_blank">infinite Discs</a></li>
+                    <li><a href="https://www.discraft.com/" target="_blank">Discraft</a></li>
+                    <li><a href="https://www.sunkingdiscs.com" target="_blank">Sun King Discs</a></li>
+                    <li><a href="https://www.discmania.net" target="_blank">Disc Mania</a></li>
+                </ul>
+            </div>
+            <div class="simple-linear side-nav show-details">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="https://www.pdga.com/" target="_blank">Pro Disc Golf Association</a></li>
+                    <li><a href="https://www.pdga.com/course-directory/advanced" target="_blank">Find a course</a></li>
+                    <li><a href="https://www.discgolfscene.com/tournaments" target="_blank">Find a Tournament</a></li>
+                    <li><a href="https://www.discgolfscene.com/clubs" target="_blank">Find a club</a></li>
+                </ul>
+            </div>   
+        </aside>
+        <footer class="item5">                                                               <!-- Start of Footer -->
+            <address>
+                123 Happy St. Happyville, Sunshine Land 12345 <br>
+                Contact: <a href="mailto:me@example.com">Mail me</a>
+            </address>
+            <p>&copy;<a href="#" target="_blank" rel="nofollow">CosNiz Designs</a></p>
+            <div class="footer-map">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a class="active" href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
